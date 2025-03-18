@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Burgers Express - Inicio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    /* Estilos Generales */
+    body { background-color: #222; color: white; font-family: 'Arial', sans-serif; }
+    .navbar { background-color: black; }
+    .navbar-nav .nav-link { color: white !important; }
+    .navbar-nav .nav-link:hover { color: #ffcc00 !important; }
+    
+    /* Carrusel */
+    .carousel-item { position: relative; }
+    .carousel img { height: 550px; object-fit: cover; filter: brightness(60%); }
+    .carousel-caption { position: absolute; top: 30%; left: 10%; text-align: left; max-width: 500px; }
+    .carousel-caption h1 { font-size: 50px; font-weight: bold; color: #ffcc00; }
+    .carousel-caption p { font-size: 18px; color: white; }
+    .btn-yellow { background-color: #ffcc00; color: black; font-weight: bold; padding: 10px 20px; border-radius: 5px; margin-top: 10px; text-decoration: none; }
+    .btn-yellow:hover { background-color: #e6b800; }
+
+    /* Footer */
+    .footer { background-color: black; padding: 20px; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="images/logo.png" alt="Burger Express Logo" height="50"> Burger Express
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="nosotrosDropdown" role="button" data-bs-toggle="dropdown">
+              Nosotros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mision.html">Misión</a></li>
+              <li><a class="dropdown-item" href="vision.html">Visión</a></li>
+              <li><a class="dropdown-item" href="Quienes_Somos.html">Quiénes Somos</a></li>
+              <li><a class="dropdown-item" href="William_Cando.html">William Cando</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://imag.bonviveur.com/hamburguesa-clasica.jpg" class="d-block w-100" alt="Hamburguesa">
+        <div class="carousel-caption">
+          <h1>SPECIAL BURGER</h1>
+          <p>All the taste in one place.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.gq.com.mx/photos/649391b89ec62ce6c5b091a5/16:9/w_2560%2Cc_limit/mejores-hamburguesas.jpg" class="d-block w-100" alt="Hamburguesa 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://laopinion.com/wp-content/uploads/sites/3/2025/01/clasica-hamburguesa-burger-king-como-hacerla-en-casa_shutterstock_2476088505.jpg" class="d-block w-100" alt="Hamburguesa 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>📞 Ordena ahora: 320 654 67</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
